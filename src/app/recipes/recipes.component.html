@@ -1,1 +1,17 @@
-<p>recipes works!</p>
+
+<header class="header">
+    <h1 class="header__title">Simple Blog</h1>
+</header>
+<main class="main-content">
+    <section class="blog-list">
+        <article class="blog-post" id="blog-post-1" *ngFor="let blog of recipes">
+            <h2 class="blog-post__title">Title of {{blog.title}}</h2>
+            <p class="blog-post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et velit ac ex rutrum gravida.</p>
+            <a href="blog-post.html" class="blog-post__read-more">Read more</a>
+        </article>
+    </section>
+</main>
+<footer class="footer">
+    <p class="footer__text">&copy; 2024 Simple Blog</p>
+</footer>
+
