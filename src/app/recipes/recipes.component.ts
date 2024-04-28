@@ -18,7 +18,25 @@ export class RecipesComponent implements OnInit {
     'Title' : "This is the video description",
     "RecipeURL": "https://www.youtube.com/watch?v=suXQ2mPfhSg",
     "Picture" : "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  }
+  },{
+    'Title' : "This is the video description",
+    "RecipeURL": "https://www.youtube.com/watch?v=suXQ2mPfhSg",
+    "Picture" : "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    'Title' : "This is the video description",
+    "RecipeURL": "https://www.youtube.com/watch?v=suXQ2mPfhSg",
+    "Picture" : "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },{
+    'Title' : "This is the video description",
+    "RecipeURL": "https://www.youtube.com/watch?v=suXQ2mPfhSg",
+    "Picture" : "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    'Title' : "This is the video description",
+    "RecipeURL": "https://www.youtube.com/watch?v=suXQ2mPfhSg",
+    "Picture" : "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
 
 ];
 

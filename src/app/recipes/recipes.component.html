@@ -5,11 +5,17 @@
 <main class="main-content">
     <section class="blog-list">
         <article class="blog-post" id="blog-post-1" *ngFor="let blog of recipes">
-            <h1>{{blog.RecipeURL}}</h1>
-            <iframe width="560" height="315" [src]="blog.RecipeURL" title="YouTube video player"></iframe>
-            <!-- <img src="{{blog.Picture}}" > -->
-            <h2 class="blog-post__title">Title of {{blog.Title}}</h2>
-            <p class="blog-post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et velit ac ex rutrum gravida.</p>
+            <!-- <h1>{{blog.RecipeURL}}</h1> -->
+            <iframe class="blog-post__video" [src]="blog.RecipeURL" title="YouTube video player"></iframe>
+            <div class="blog-post__footer">
+                <img src="{{blog.Picture}}" class="blog-post__image" >
+                <div>
+
+                    <h2 class="blog-post__title">{{blog.Title}}</h2>
+                    <p class="blog-post__desc">{{blog.Title}}</p>
+                </div>
+                <!-- <p class="blog-post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et velit ac ex rutrum gravida.</p> -->
+            </div>
         </article>
     </section>
 </main>
