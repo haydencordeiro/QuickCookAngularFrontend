@@ -35,7 +35,7 @@ QuickCook is built using Angular and .NET technologies, ensuring a seamless and 
 [![DEMO](https://img.youtube.com/vi/fkRCeE9O6SU/0.jpg)](https://www.youtube.com/watch?v=fkRCeE9O6SU)
 
 ## Backend
-[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/haydencordeiro/QuickCookBackend/)  
+[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/haydencordeiro/QuickCookBackend.NET)  
 
 
 ## Contributors <a id="contributors"></a>
