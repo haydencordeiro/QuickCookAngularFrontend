@@ -10,53 +10,66 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 export class RecipesComponent implements OnInit {
   recipes: any[] = [{
-    'Title' : "This is the video description",
+    'Title': "This is the video description",
     "RecipeURL": "https://www.youtube.com/watch?v=suXQ2mPfhSg",
-    "Picture" : "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    "Picture": "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "Cuisine": "Italian"
   },
   {
-    'Title' : "This is the video description",
+    'Title': "This is the video description",
     "RecipeURL": "https://www.youtube.com/watch?v=suXQ2mPfhSg",
-    "Picture" : "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  },{
-    'Title' : "This is the video description",
+    "Picture": "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "Cuisine": "Mexican"
+  }, {
+    'Title': "This is the video description",
     "RecipeURL": "https://www.youtube.com/watch?v=suXQ2mPfhSg",
-    "Picture" : "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    "Picture": "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "Cuisine": "French"
   },
   {
-    'Title' : "This is the video description",
+    'Title': "This is the video description",
     "RecipeURL": "https://www.youtube.com/watch?v=suXQ2mPfhSg",
-    "Picture" : "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  },{
-    'Title' : "This is the video description",
+    "Picture": "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "Cuisine": "Korean"
+  }, {
+    'Title': "This is the video description",
     "RecipeURL": "https://www.youtube.com/watch?v=suXQ2mPfhSg",
-    "Picture" : "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    "Picture": "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "Cuisine": "Indian"
   },
   {
-    'Title' : "This is the video description",
+    'Title': "This is the video description",
     "RecipeURL": "https://www.youtube.com/watch?v=suXQ2mPfhSg",
-    "Picture" : "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  },{
-    'Title' : "This is the video description",
+    "Picture": "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "Cuisine": "Greek"
+  }, {
+    'Title': "This is the video description",
     "RecipeURL": "https://www.youtube.com/watch?v=suXQ2mPfhSg",
-    "Picture" : "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    "Picture": "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "Cuisine": "Thai"
   },
   {
-    'Title' : "This is the video description",
+    'Title': "This is the video description",
     "RecipeURL": "https://www.youtube.com/watch?v=suXQ2mPfhSg",
-    "Picture" : "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  },{
-    'Title' : "This is the video description",
+    "Picture": "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "Cuisine": "Chinese"
+  }, {
+    'Title': "This is the video description",
     "RecipeURL": "https://www.youtube.com/watch?v=suXQ2mPfhSg",
-    "Picture" : "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    "Picture": "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "Cuisine": "Mediterranean"
   },
   {
-    'Title' : "This is the video description",
+    'Title': "This is the video description",
     "RecipeURL": "https://www.youtube.com/watch?v=suXQ2mPfhSg",
-    "Picture" : "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  },
-
+    "Picture": "https://images.pexels.com/photos/3054690/pexels-photo-3054690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "Cuisine": "Japanese"
+  }
 ];
+
+filteredRecipes: any[] = [];
+selectedCuisine: string = 'All';
+
 
 constructor(private http: HttpClient, private sanitizer: DomSanitizer) { }
 
@@ -94,10 +107,22 @@ constructor(private http: HttpClient, private sanitizer: DomSanitizer) { }
       const newVideoID = `https://www.youtube.com/embed/${videoId}?rel=0&enablejsapi=1`
       this.recipes[i].RecipeURL = this.sanitizer.bypassSecurityTrustResourceUrl(newVideoID);
     }
+    this.filteredRecipes = this.recipes;
+
   }
 
   onCuisineSelected(cuisine: string): void {
-    alert(`Selected cuisine: ${cuisine}`);
+    // alert(`Selected cuisine: ${cuisine}`);
+    this.selectedCuisine = cuisine;
+    this.filterRecipes();
+  }
+
+  filterRecipes(): void {
+    if (this.selectedCuisine === 'All') {
+      this.filteredRecipes = this.recipes;
+    } else {
+      this.filteredRecipes = this.recipes.filter(recipe => recipe.Cuisine === this.selectedCuisine);
+    }
   }
 
 }

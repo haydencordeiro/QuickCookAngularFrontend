@@ -5,7 +5,7 @@
 <main class="main-content">
     <app-cusinefilter (cuisineSelected)="onCuisineSelected($event)"></app-cusinefilter>
     <section class="blog-list">
-        <article class="blog-post" id="blog-post-1" *ngFor="let blog of recipes">
+        <article class="blog-post" id="blog-post-1" *ngFor="let blog of filteredRecipes">
             <!-- <h1>{{blog.RecipeURL}}</h1> -->
             <iframe class="blog-post__video" [src]="blog.RecipeURL" title="YouTube video player"></iframe>
             <div class="blog-post__footer">
@@ -13,7 +13,7 @@
                 <div>
 
                     <h2 class="blog-post__title">{{blog.Title}}</h2>
-                    <p class="blog-post__desc">{{blog.Title}}</p>
+                    <p class="blog-post__desc">{{blog.Cuisine}}</p>
                 </div>
                 <!-- <p class="blog-post__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et velit ac ex rutrum gravida.</p> -->
             </div>
