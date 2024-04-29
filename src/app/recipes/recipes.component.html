@@ -3,7 +3,7 @@
     <!-- <h1 class="header__title">Simple Blog</h1> -->
 </header>
 <main class="main-content">
-    <app-cusinefilter></app-cusinefilter>
+    <app-cusinefilter (cuisineSelected)="onCuisineSelected($event)"></app-cusinefilter>
     <section class="blog-list">
         <article class="blog-post" id="blog-post-1" *ngFor="let blog of recipes">
             <!-- <h1>{{blog.RecipeURL}}</h1> -->

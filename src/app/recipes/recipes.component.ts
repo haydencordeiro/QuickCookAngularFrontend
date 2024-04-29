@@ -96,6 +96,8 @@ constructor(private http: HttpClient, private sanitizer: DomSanitizer) { }
     }
   }
 
-
+  onCuisineSelected(cuisine: string): void {
+    alert(`Selected cuisine: ${cuisine}`);
+  }
 
 }

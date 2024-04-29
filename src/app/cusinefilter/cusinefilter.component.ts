@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-cusinefilter',
@@ -23,9 +23,13 @@ export class CusinefilterComponent {
     'Brazilian',
     'Caribbean',
   ];
-  selectedCusine:string = ''
+  selectedCusine:string = 'All'
+  @Output() cuisineSelected: EventEmitter<string> = new EventEmitter<string>();
+
   fun(cuisine:string): void {
     this.selectedCusine=cuisine;
+    this.cuisineSelected.emit(cuisine);
+
     // alert(this.selectedCusine)
   }
 }
