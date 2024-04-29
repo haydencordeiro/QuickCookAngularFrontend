@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, Input  } from '@angular/core';
 
 @Component({
   selector: 'app-cusinefilter',
@@ -6,23 +6,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrl: './cusinefilter.component.scss'
 })
 export class CusinefilterComponent {
-  cuisines:string[] = [
-    'All',
-    'Chinese',
-    'Italian',
-    'Mexican',
-    'Indian',
-    'Japanese',
-    'Thai',
-    'French',
-    'Mediterranean',
-    'American',
-    'Korean',
-    'Greek',
-    'Spanish',
-    'Brazilian',
-    'Caribbean',
-  ];
+  @Input() cuisines: string[] = [];
   selectedCusine:string = 'All'
   @Output() cuisineSelected: EventEmitter<string> = new EventEmitter<string>();
 

@@ -3,7 +3,7 @@
     <!-- <h1 class="header__title">Simple Blog</h1> -->
 </header>
 <main class="main-content">
-    <app-cusinefilter (cuisineSelected)="onCuisineSelected($event)"></app-cusinefilter>
+    <app-cusinefilter (cuisineSelected)="onCuisineSelected($event)" [cuisines]="cuisines"></app-cusinefilter>
     <section class="blog-list">
         <article class="blog-post" id="blog-post-1" *ngFor="let blog of filteredRecipes">
             <!-- <h1>{{blog.RecipeURL}}</h1> -->
@@ -19,7 +19,7 @@
             </div>
         </article>
     </section>
-    <app-addrecipes></app-addrecipes>
+    <app-addrecipes [cuisines]="cuisines"></app-addrecipes>
 </main>
 <footer class="footer">
     <p class="footer__text">&copy; 2024 Simple Blog</p>

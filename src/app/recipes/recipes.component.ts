@@ -67,6 +67,24 @@ export class RecipesComponent implements OnInit {
   }
 ];
 
+cuisines:string[] = [
+  'All',
+  'Chinese',
+  'Italian',
+  'Mexican',
+  'Indian',
+  'Japanese',
+  'Thai',
+  'French',
+  'Mediterranean',
+  'American',
+  'Korean',
+  'Greek',
+  'Spanish',
+  'Brazilian',
+  'Caribbean',
+];
+
 filteredRecipes: any[] = [];
 selectedCuisine: string = 'All';
 

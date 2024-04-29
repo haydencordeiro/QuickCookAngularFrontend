@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input  } from '@angular/core';
 
 @Component({
   selector: 'app-addrecipes',
@@ -6,12 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './addrecipes.component.scss'
 })
 export class AddrecipesComponent {
+  @Input() cuisines: string[] = [];
+
   isFormOpened:boolean = true;
   formData: any = {
     'Title': '',
     'RecipeURL': '',
     'Picture': '',
-    'Cuisine': ''
+    'Cuisine': 'All'
   };
 
   openForm():void {

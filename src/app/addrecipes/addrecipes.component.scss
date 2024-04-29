@@ -70,7 +70,7 @@ z-index: 100;
   
   input[type='text'],
   input[type='url'] {
-    width: 100%;
+    width: 95%;
     padding: 8px;
     font-size: 16px;
     border: 0px solid #ccc;
@@ -102,3 +102,32 @@ z-index: 100;
     background-color: #0056b3;
   }
   
+  // Styling the select element
+select {
+  width: 100%; // Adjust the width as needed
+  padding: 0.5rem; // Adjust the padding as needed
+  font-size: 1rem; // Adjust the font size as needed
+  border: 1px solid #ced4da; // Border color
+  border-radius: 0.25rem; // Border radius
+  background-color: #909090; // Background color
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; // Transition effect
+  border: 0;
+}
+
+// Styling the select element when it's focused
+select:focus {
+  outline: 0; // Remove default focus outline
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); // Box shadow when focused
+}
+
+// Styling the options within the select element
+select option {
+  background-color: #909090; // Background color of options
+  color: white; // Text color of options
+}
+
+// Styling the options within the select element when hovered
+select option:hover {
+  background-color: #e9ecef; // Background color of options when hovered
+  color: white; // Text color of options when hovered
+}
