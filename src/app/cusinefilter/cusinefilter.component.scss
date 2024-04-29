@@ -3,10 +3,14 @@
     // background-color: red;
     list-style: none;
     display: flex;
+    position: fixed;
+    left: 147px;
+    width: 82.5%;
+    top:0;
+    background-color: #0F0F0F;    
     margin: 0;
     padding: 0;
     &__item{
-
         margin-right: 12px;
 
     }  
