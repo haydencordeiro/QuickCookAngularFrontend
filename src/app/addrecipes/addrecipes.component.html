@@ -1,0 +1,28 @@
+<span class="add_button" (click)="openForm()" *ngIf="!isFormOpened">+</span>
+<div class="form_component" *ngIf="isFormOpened">
+    <div class="form_data">
+        <div class="form_div">
+            <span class="close_button" (click)="closeForm()">x</span>
+            <!-- <h1> This is the form</h1> -->
+            <form (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <input type="text" placeholder="Title" id="title" name="title" [(ngModel)]="formData.Title" required>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="recipeURL">Recipe URL:</label> -->
+                    <input type="url" placeholder="Youtube URL" id="recipeURL" name="recipeURL" [(ngModel)]="formData.RecipeURL" required>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="picture">Picture URL:</label> -->
+                    <input type="url" placeholder="PictureURL" id="picture" name="picture" [(ngModel)]="formData.Picture" required>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="cuisine">Cuisine:</label> -->
+                    <input type="text" placeholder="Cuisine" id="cuisine" name="cuisine" [(ngModel)]="formData.Cuisine" required>
+                </div>
+                <div class="align-button">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+    </div>
+</div>

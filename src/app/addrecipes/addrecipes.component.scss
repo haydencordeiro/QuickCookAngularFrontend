@@ -1,0 +1,104 @@
+.add_button{
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: red;
+    font-size: 2rem;
+    font-weight: 900;
+    background-color: white;
+}
+// .form_component{
+
+// }
+
+.form_component {
+z-index: 100;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #282828; /* Red color with 50% opacity */
+    // height: 100%;
+    // width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    color:rgb(170, 170, 170);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form_data {
+    width: 100%;
+  }
+  
+  .close_button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    background-color: white;
+    top: -0.5rem;
+    right: -0.5rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    color: black;
+    font-weight: bolder;
+
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type='text'],
+  input[type='url'] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    background-color: #909090;
+  }
+  
+  input[type='text']::placeholder,
+    input[type='url']::placeholder {
+        color:white;
+    }
+  .align-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  button[type='submit'] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-end;
+  }
+  
+  button[type='submit']:hover {
+    background-color: #0056b3;
+  }
+  

@@ -2,7 +2,7 @@
     <li class="search-list__item" 
     *ngFor="let cuisine of cuisines" 
     [class.search-list__item-active]="cuisine === selectedCusine" 
-    (click)="fun(cuisine)">
+    (click)="selectCusine(cuisine)">
         <p>{{ cuisine }}</p>
       </li>
 

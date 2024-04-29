@@ -26,7 +26,7 @@ export class CusinefilterComponent {
   selectedCusine:string = 'All'
   @Output() cuisineSelected: EventEmitter<string> = new EventEmitter<string>();
 
-  fun(cuisine:string): void {
+  selectCusine(cuisine:string): void {
     this.selectedCusine=cuisine;
     this.cuisineSelected.emit(cuisine);
 
