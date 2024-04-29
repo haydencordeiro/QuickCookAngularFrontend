@@ -1,27 +1,46 @@
-# Receipes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+# QuickCook
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=.net&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+QuickCook is a dynamic online platform designed to revolutionize the way busy students approach cooking. Aimed at addressing the time constraints and budget limitations faced by grad students, QuickCook provides a curated collection of quick, easy, and affordable recipes.
 
-## Code scaffolding
+## Key Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Curated Recipe Collection
+QuickCook offers a meticulously curated selection of recipes tailored to the needs of busy students. Each recipe is handpicked for its simplicity, affordability, and quick preparation time.
 
-## Build
+### Cuisine Filtering
+Users can easily browse and filter recipes based on their preferred cuisines. Whether craving Italian, Mexican, or Asian cuisine, QuickCook ensures that users can find recipes that suit their taste preferences.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Collaborative Platform
+QuickCook encourages collaboration by allowing users to contribute their own recipes to the platform. This feature fosters a sense of community and enables the continuous expansion of the recipe collection.
 
-## Running unit tests
+### YouTube Integration
+In addition to written recipes, QuickCook provides access to instructional cooking videos hosted on YouTube. This visual component enhances the user experience and facilitates step-by-step guidance for preparing each dish.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Angular and .NET Framework
+QuickCook is built using Angular and .NET technologies, ensuring a seamless and responsive user interface, as well as robust backend functionality.
 
-## Running end-to-end tests
+## Benefits
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **Time Efficiency:** QuickCook helps students save time by offering recipes that can be prepared quickly, allowing them to focus on their studies and other responsibilities.
+- **Cost-Effectiveness:** By promoting home cooking over dining out, QuickCook helps students save money and maintain a budget-friendly lifestyle.
+- **Healthier Eating Habits:** With an emphasis on nutritious and balanced meals, QuickCook supports students in maintaining healthy eating habits, essential for their overall well-being.
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Demo
+[![DEMO](https://img.youtube.com/vi/fkRCeE9O6SU/0.jpg)](https://www.youtube.com/watch?v=fkRCeE9O6SU)
+
+## Backend
+[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/haydencordeiro/QuickCookBackend.NET)  
+
+
+## Contributors <a id="contributors"></a>
+  - [Hayden Cordeiro](https://hayden.co.in/)<br>
+  [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/haydencordeiro/)
+  [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/haydencordeiro)
