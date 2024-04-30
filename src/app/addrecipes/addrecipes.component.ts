@@ -4,7 +4,6 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json',
-    'accept': '*/*'
   })
 };
 
@@ -54,5 +53,13 @@ export class AddrecipesComponent {
         console.error('Error adding recipe:', error);
         // Handle error response here
       }
-    );  }
+    );  
+    this.formData = {
+      'Title': '',
+      'RecipeURL': '',
+      'Picture': '',
+      'Cuisine': 'All'
+    };
+    this.closeForm();
+  }
 }
