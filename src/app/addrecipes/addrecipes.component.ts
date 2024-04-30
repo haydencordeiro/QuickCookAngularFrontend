@@ -19,7 +19,7 @@ export class AddrecipesComponent {
 
   @Input() cuisines: string[] = [];
 
-  isFormOpened:boolean = true;
+  isFormOpened:boolean = false;
   formData: any = {
     'title': '',
     'recipeURL': '',
