@@ -65,20 +65,6 @@ processRecipes(): void {
     const videoId = this.extractVideoId(this.recipes[i].recipeURL);
     const newVideoID = `https://www.youtube.com/embed/${videoId}?rel=0&enablejsapi=1`
     this.recipes[i].recipeURL = this.sanitizer.bypassSecurityTrustResourceUrl(newVideoID);
-
-    // // Extracting picture ID
-    // if (this.recipes[i].picture) {
-    //   const pictureUrl = this.recipes[i].picture;
-    //   const startIndex = pictureUrl.lastIndexOf('-') + 1;
-    //   const endIndex = pictureUrl.lastIndexOf('.');
-    //   if (startIndex !== -1 && endIndex !== -1 && endIndex > startIndex) {
-    //     this.recipes[i].pictureId = pictureUrl.substring(startIndex, endIndex);
-    //   } else {
-    //     // Handle the case when picture ID cannot be extracted
-    //     this.recipes[i].pictureId = null;
-    //   }
-    // }
-    
     const displayPictureURL = `https://images.pexels.com/photos/${this.recipes[i].picture}/pexels-photo-${this.recipes[i].picture}.jpeg`
     this.recipes[i].picture = this.sanitizer.bypassSecurityTrustResourceUrl(displayPictureURL);
   }
