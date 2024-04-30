@@ -8,14 +8,14 @@ html {
     flex-direction: column;
 }
 
-.blog-list{
+.recipe-list{
     width: 82.5%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 3rem;
 }
-.blog-post{
+.recipe-post{
     // max-width: 30%;
     padding:0.5rem;
     &__video{

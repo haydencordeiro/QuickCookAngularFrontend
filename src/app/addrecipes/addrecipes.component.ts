@@ -21,10 +21,10 @@ export class AddrecipesComponent {
 
   isFormOpened:boolean = true;
   formData: any = {
-    'Title': '',
-    'RecipeURL': '',
-    'Picture': '',
-    'Cuisine': 'All'
+    'title': '',
+    'recipeURL': '',
+    'picture': '',
+    'cuisine': 'All'
   };
 
   openForm():void {
@@ -37,10 +37,10 @@ export class AddrecipesComponent {
     console.log('Form submitted:', this.formData);
     const recipeData = {
       "id": 0,
-      "title": this.formData.Title,
-      "recipeURL": this.formData.RecipeURL,
+      "title": this.formData.title,
+      "recipeURL": this.formData.recipeURL,
       "picture": "",
-      "cuisine": this.formData.Cuisine
+      "cuisine": this.formData.cuisine
     };
 
     this.http.post<any>('https://localhost:7144/api/recipes', recipeData, httpOptions)
@@ -55,10 +55,10 @@ export class AddrecipesComponent {
       }
     );  
     this.formData = {
-      'Title': '',
-      'RecipeURL': '',
-      'Picture': '',
-      'Cuisine': 'All'
+      'title': '',
+      'recipeURL': '',
+      'picture': '',
+      'cuisine': 'All'
     };
     this.closeForm();
   }

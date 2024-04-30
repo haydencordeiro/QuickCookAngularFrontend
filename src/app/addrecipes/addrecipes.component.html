@@ -10,7 +10,7 @@
                 </div>
                 <div class="form-group">
                     <!-- <label for="recipeURL">Recipe URL:</label> -->
-                    <input type="url" placeholder="Youtube URL" id="recipeURL" name="recipeURL" [(ngModel)]="formData.RecipeURL" required>
+                    <input type="url" placeholder="Youtube URL" id="recipeURL" name="recipeURL" [(ngModel)]="formData.recipeURL" required>
                 </div>
                 <div class="form-group">
                     <!-- <label for="picture">Picture URL:</label> -->
@@ -18,7 +18,7 @@
                 </div>
                 <div class="form-group">
                     <!-- <label for="cuisine">Cuisine:</label> -->
-                    <select id="cuisine" name="cuisine" [(ngModel)]="formData.Cuisine" class="form-control" required>
+                    <select id="cuisine" name="cuisine" [(ngModel)]="formData.cuisine" class="form-control" required>
                         <option *ngFor="let cuisine of cuisines" [value]="cuisine">{{ cuisine }}</option>
                     </select>
                    </div>
