@@ -9,7 +9,7 @@
             <!-- <h1>{{recipe.recipeURL}}</h1> -->
             <iframe class="recipe-post__video" [src]="recipe.recipeURL" title="YouTube video player"></iframe>
             <div class="recipe-post__footer">
-                <img src="{{recipe.picture}}" class="recipe-post__image" >
+                <img [src]="recipe.picture" class="recipe-post__image" >
                 <div>
 
                     <h2 class="recipe-post__title">{{recipe.title}}</h2>
