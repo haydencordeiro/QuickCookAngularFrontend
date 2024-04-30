@@ -1,4 +1,12 @@
 import { Component, Input  } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type': 'application/json',
+    'accept': '*/*'
+  })
+};
 
 @Component({
   selector: 'app-addrecipes',
@@ -6,6 +14,10 @@ import { Component, Input  } from '@angular/core';
   styleUrl: './addrecipes.component.scss'
 })
 export class AddrecipesComponent {
+
+  constructor(private http: HttpClient) { }
+
+
   @Input() cuisines: string[] = [];
 
   isFormOpened:boolean = true;
@@ -24,6 +36,23 @@ export class AddrecipesComponent {
   }
   onSubmit() {
     console.log('Form submitted:', this.formData);
-    // You can perform further actions here, like sending the data to a server
-  }
+    const recipeData = {
+      "id": 0,
+      "title": this.formData.Title,
+      "recipeURL": this.formData.RecipeURL,
+      "picture": "",
+      "cuisine": this.formData.Cuisine
+    };
+
+    this.http.post<any>('https://localhost:7144/api/recipes', recipeData, httpOptions)
+    .subscribe(
+      (response) => {
+        console.log('Recipe added successfully!', response);
+        // You can add further actions here upon successful addition
+      },
+      (error) => {
+        console.error('Error adding recipe:', error);
+        // Handle error response here
+      }
+    );  }
 }
